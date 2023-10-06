@@ -4,8 +4,10 @@ const Category = ({ category }) => {
   const { name } = category;
   return (
     <div>
-      <h3 className="flex flex-col justify-center items-start py-3 ml-12
-	   text-lg ">
+      <h3
+        className="flex flex-col justify-center items-start py-3 ml-12
+	   text-lg "
+      >
         {name}
       </h3>
     </div>
@@ -13,7 +15,7 @@ const Category = ({ category }) => {
 };
 
 Category.propTypes = {
-  category: PropTypes.string,
+  category: PropTypes.object,
 };
 
 export default Category;
